@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp14
+{
+    public partial class Billeteras : Form
+    {
+        public Billeteras()
+        {
+            InitializeComponent();
+        }
+
+        private void Billeteras_Load(object sender, EventArgs e)
+        {
+            b1.Image = imageList2.Images[0];
+            b2.Image = imageList2.Images[1];
+            b3.Image = imageList2.Images[2];
+            b4.Image = imageList2.Images[3];
+            b5.Image = imageList2.Images[4];
+            b6.Image = imageList2.Images[5];
+            b7.Image = imageList2.Images[6];
+            b8.Image = imageList2.Images[7];
+            b9.Image = imageList2.Images[8];
+            b10.Image = imageList2.Images[9];
+            b11.Image = imageList2.Images[10];
+            b12.Image = imageList2.Images[11];
+            b13.Image = imageList2.Images[12];
+            b14.Image = imageList2.Images[13];
+            b15.Image = imageList2.Images[14];
+        }
+        
+    }
+}
