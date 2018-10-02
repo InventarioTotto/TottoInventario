@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp14
+{
+    public partial class Accesorios : Form
+    {
+        public Accesorios()
+        {
+            InitializeComponent();
+        }
+
+        private void Accesorios_Load(object sender, EventArgs e)
+        {
+            a1.Image = imageList3.Images[0];
+            a2.Image = imageList3.Images[1];
+            a3.Image = imageList3.Images[2];
+            a4.Image = imageList3.Images[3];
+            a5.Image = imageList3.Images[4];
+            a6.Image = imageList3.Images[5];
+            a7.Image = imageList3.Images[6];
+            a8.Image = imageList3.Images[7];
+            a9.Image = imageList3.Images[8];
+            a10.Image = imageList3.Images[9];
+            a11.Image = imageList3.Images[10];
+            a12.Image = imageList3.Images[11];
+            a13.Image = imageList3.Images[12];
+            a14.Image = imageList3.Images[13];
+            a15.Image = imageList3.Images[14];
+        }
+    }
+}
