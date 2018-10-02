@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp14
+{
+    public partial class INICIO : Form
+    {
+        public INICIO()
+        {
+            InitializeComponent();
+        }
+        Random rmaletas = new Random();
+        Random rbilleteras = new Random();
+        Random raccesorios = new Random();
+        private void INICIO_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int m, b, a;
+            m = rmaletas.Next(29);
+            b = rbilleteras.Next(14);
+            a = raccesorios.Next(14);
+            pictureBox1.Image = Maletas.Images[m];
+            pictureBox2.Image = Billeteras.Images[b];
+            pictureBox3.Image = Accesorios.Images[a];
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            timer1.Enabled = false;
+            Maletas maletas = new Maletas();
+            maletas.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            timer1.Enabled = false;
+            Billeteras billeteras = new Billeteras();
+            billeteras.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            timer1.Enabled = false;
+            Accesorios accesorios = new Accesorios();
+            accesorios.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            timer1.Enabled = false;
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
+    }
+}
